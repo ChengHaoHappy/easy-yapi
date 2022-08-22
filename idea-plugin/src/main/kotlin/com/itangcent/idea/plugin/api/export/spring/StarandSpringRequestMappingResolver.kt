@@ -31,6 +31,7 @@ class StandardSpringRequestMappingResolver : SpringRequestMappingResolver {
         } else {
             val requestMappingAttributes = HashMap(requestMapping.first)
             requestMappingAttributes["method"] = when (annotationName) {
+                SpringClassName.BIZ_OPENAPI_ANNOTATION -> HttpMethod.POST
                 SpringClassName.GET_MAPPING -> HttpMethod.GET
                 SpringClassName.POST_MAPPING -> HttpMethod.POST
                 SpringClassName.DELETE_MAPPING -> HttpMethod.DELETE

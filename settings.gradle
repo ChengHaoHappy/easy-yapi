@@ -1,3 +1,12 @@
+pluginManagement {
+    repositories {
+        // 插件使用阿里云 maven 源
+        maven {
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
+        }
+    }
+}
+
 rootProject.name = 'easy-yapi'
 include 'idea-plugin'
 include 'common-api'

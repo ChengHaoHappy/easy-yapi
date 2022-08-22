@@ -2,6 +2,13 @@ import java.nio.charset.StandardCharsets
 
 buildscript {
     repositories {
+        mavenLocal()
+        maven {
+            url("https://maven.aliyun.com/repository/public/")
+        }
+        maven {
+            url("https://maven.aliyun.com/repository/spring/")
+        }
         mavenCentral()
     }
     dependencies {
@@ -15,7 +22,7 @@ plugins {
 }
 
 group 'com.itangcent'
-version '2.4.4.191.0'
+version '1.0.0'
 
 @SuppressWarnings("GroovyAssignabilityCheck")
 static def majorVersion(version) {
@@ -249,6 +256,12 @@ allprojects {
 
     repositories {
         mavenLocal()
+        maven {
+            url("https://maven.aliyun.com/repository/public/")
+        }
+        maven {
+            url("https://maven.aliyun.com/repository/spring/")
+        }
         mavenCentral()
         jcenter()
 
