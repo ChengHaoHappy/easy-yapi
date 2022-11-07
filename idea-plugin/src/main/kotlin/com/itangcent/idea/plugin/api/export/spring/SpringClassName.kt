@@ -18,7 +18,7 @@ object SpringClassName {
     const val MULTI_PART_FILE = "org.springframework.web.multipart.MultipartFile"
 
     //annotations
-    const val BIZ_OPENAPI_ANNOTATION = "com.alibaba.bizworks.openapi.BizOpenApi"
+    const val BIZ_OPENAPI_ANNOTATION = "com.alibaba.bizworks.infra.openapi.BizOpenApi"
     const val REQUEST_MAPPING_ANNOTATION = "org.springframework.web.bind.annotation.RequestMapping"
     const val REQUEST_BODY_ANNOTATION = "org.springframework.web.bind.annotation.RequestBody"
     const val REQUEST_PARAM_ANNOTATION = "org.springframework.web.bind.annotation.RequestParam"
